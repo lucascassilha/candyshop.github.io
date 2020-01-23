@@ -1,0 +1,254 @@
+body{
+    margin:0;
+    padding: 0;
+    outline: 0;
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    background-image: linear-gradient(#690375,#CB429F);
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes opacityChange {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+.sidebar{
+    width: 23%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #2C0E37;
+    justify-content: center;
+}
+
+.sidebar > img{
+    opacity: 0;
+    max-width:100%;
+    height:auto;
+    margin: 10px;
+    background-color: transparent;
+    animation: opacityChange 4s forwards;
+}
+
+.sidebar ul{
+    animation: opacityChange 4s forwards;
+    opacity: 0;
+    list-style:none;
+}
+
+.sidebar li{
+    margin: 5px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    align-self: center;
+    list-style-type:none;
+    color: #DAA89B;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.sidebar a:hover{
+    font-size: 22px;
+    color:white;
+}
+
+.article{
+    margin-left: 23%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:887px){
+    .sidebar{
+        display: none;
+    }
+    .article{
+        margin-left: 0px;
+    }
+}
+
+.article > header > img{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.article h1{
+    color: #DAA89B;
+    font-weight: 700;
+    margin:10px
+}
+
+main h3{
+    margin-left: 10px;
+    margin-bottom: -2px;
+    color: #DAA89B;
+}
+
+
+.article p {
+    margin:10px;
+    margin-top: 0;
+    color: white;
+}
+
+.shops img{
+    height: 250px;
+}
+
+.shops{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.shops li {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    list-style: none;
+    background-color: #AE847E;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    color: white;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.shops > li > p{
+    margin-top: 5px;
+}
+
+.shops li:hover{
+    background-color: #DAA89B;
+    color:black;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+}
+
+.candies{
+    margin: 0 auto;
+    width: 100%;
+    display: flexbox;
+    flex-flow: column;
+    gap:20px;
+    margin-left: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width:800px){
+    .candies{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+
+.candies img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    transition: 1s;
+    border-radius: 10px;
+    margin:10px
+}
+.candies img:hover {
+    width: 210px;
+    height: 210px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+
+.footer{
+    bottom: 0;
+    height: 300px;
+    width:100%;
+    background-color: #690375;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer form{
+    margin:10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer > form >input{
+    background-color: #DAA89B;
+    color: white;
+    border:0;
+    padding: 5px;
+    border-radius: 4px;
+    margin:5px;
+    width: 300px;
+    transition:0.5s;
+}
+
+#submit{
+    font-weight: bold;
+    color: grey;
+    width: 305px;
+}
+
+#submit:hover{
+    color: white;
+    background-color: #AE847E;
+}
+
+.footer > form > textarea{
+    background-color: #DAA89B;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border:0;
+    width: 300px;
+    padding: 5px;
+    border-radius: 4px;
+    height: 80px;
+    margin:5px
+}
+
+.footer text,.footer a{
+    font-weight: 600;
+    color: #DAA89B;
+    text-decoration: none;
+    transition:1s;
+}
+
+.footer a:hover{
+    color: white
+}
