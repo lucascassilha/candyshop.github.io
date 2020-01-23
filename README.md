@@ -1,4 +1,4 @@
-# candyshop.github.io
+# candyshop
 
 A project for improving in CSS and Git  :smile:
 
