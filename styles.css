@@ -319,7 +319,7 @@ main h3{
     }
     .shops > li > img{
         background-position: center;
-        height: 100px;
+        height: 100px; 
     }
     .shops > li > label{
         font-size: 13px;
