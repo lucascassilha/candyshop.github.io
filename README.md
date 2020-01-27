@@ -1,7 +1,7 @@
 <p align="center">
   <img width="300" height="200" src="./img/Logo.png">
 </p>
-<h1 align="center">:lollipop: Project for CSS responsive layout study :lollipop:<h1>
+<h2 align="center">:lollipop: Project for CSS responsive layout study :lollipop:<h2>
   
 <p align="center">
   <img src="https://firebasestorage.googleapis.com/v0/b/petcare-ac7e2.appspot.com/o/git%2Fpc.png?alt=media&token=d7340cbf-e50f-4064-9398-4055c45fe702">
