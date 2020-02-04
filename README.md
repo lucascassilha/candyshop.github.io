@@ -9,6 +9,9 @@
 
 :wrench: Technologies
 ---------
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5771695b705442648a42f7f23346dedf)](https://app.codacy.com/manual/lucascassilha/candyshop.github.io?utm_source=github.com&utm_medium=referral&utm_content=lucascassilha/candyshop.github.io&utm_campaign=Badge_Grade_Dashboard)
+
 The project was developed using the following technologies:
 - HTML5
 - CSS3
